@@ -1,6 +1,6 @@
 Steps of execution for the first question:
 
-1. Write the files of code along with Dockerfile, manifest.yaml, service.yaml
+1. Write the files of code along with Dockerfile, deployment.yaml, service.yaml
 2. Run the following commands to deploy the application in Kubernetes:
 i) docker build -t An0802/quotes-app:v0.0.1 .
 ii) docker login
@@ -8,7 +8,7 @@ iii) docker run -p 1234:5000 -it An0802/quotes-app:v0.0.1
 The app runs in localhost:1234
 iv) docker push An0802/quotes-app:v0.0.1
 v) minikube start
-vi) kubectl apply -f manifest.yaml
+vi) kubectl apply -f deployment.yaml
 vii) kubectl apply -f service.yaml
 viii) kubectl get pods
 ix) kubectl get service
